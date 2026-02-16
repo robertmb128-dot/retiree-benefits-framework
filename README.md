@@ -18,3 +18,22 @@ This repository showcases:
 
 ## Folder Structure
 
+retiree-benefits-framework/
+├── README.md
+├── docs/
+│   ├── SECURITY.md
+│   ├── GOVERNANCE.md
+│   ├── SSP.md
+│   └── ... other docs
+├── diagrams/
+│   ├── zero-trust-production.svg
+│   ├── request-auth-sequence.svg
+│   └── ... other diagrams
+├── scripts/
+│   ├── synthetic-data-generator.py
+│   └── ...
+├── examples/
+│   ├── sample1.json
+│   └── ...
+└── core-logic-spec/
+    └── core-logic-overview.md
