@@ -1,0 +1,13 @@
+name: CI/CD Demo
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Validate Python scripts
+      run: |
+        python scripts/synthetic-data-generator.py
+        python scripts/validation-rules.py

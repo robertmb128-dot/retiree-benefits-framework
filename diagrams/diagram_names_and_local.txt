@@ -1,0 +1,17 @@
+1. /diagrams/zero-trust-placeholder.png → top-left in the grid
+
+2. /diagrams/network-zones-placeholder.png → top-center
+
+3. /diagrams/db-ledger-placeholder.png → top-right
+
+4. /diagrams/request-auth-sequence-placeholder.png → middle-left
+
+5. /diagrams/threat-model-placeholder.png → middle-center
+
+6. /diagrams/ci-cd-pipeline-placeholder.png → middle-right
+
+7. /diagrams/incident-response-plan-placeholder.png → bottom-left
+
+8. /diagrams/recovery-workflow-placeholder.png → bottom-center
+
+9. /diagrams/quick-reference-map-placeholder.png → bottom-right
