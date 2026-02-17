@@ -1,57 +1,20 @@
+name: CI/CD Demo Pipeline
 
----
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
-## Diagram Previews
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-### Zero Trust Architecture
-![Zero Trust](diagrams/zero-trust-placeholder.png)
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-### Network Zones
-![Network Zones](diagrams/network-zones-placeholder.png)
-
-### Database Ledger Architecture
-![DB Ledger](diagrams/db-ledger-placeholder.png)
-
-### Request & Authorization Flow
-![Request Auth Sequence](diagrams/request-auth-sequence-placeholder.png)
-
-### Threat Model
-![Threat Model](diagrams/threat-model-placeholder.png)
-
-### CI/CD Pipeline
-![CI/CD Pipeline](diagrams/ci-cd-pipeline-placeholder.png)
-
-### Incident Response & Recovery
-![Incident Response](diagrams/incident-response-plan-placeholder.png)
-
-### Recovery Workflow
-![Recovery Workflow](diagrams/recovery-workflow-placeholder.png)
-
-### Quick Reference Map
-![Quick Reference](diagrams/quick-reference-map-placeholder.png)
-
----
-
-## Usage
-This framework is intended as a reference for:
-- Enterprise architecture demonstrations  
-- Public-sector modernization discussions  
-- Security and compliance educational purposes  
-
-You can:
-- Explore the architecture diagrams  
-- Review the documentation (`/docs/`)  
-- Test synthetic workflows using the scripts (`/scripts/`)  
-
----
-
-## About the Author
-This project demonstrates professional experience in:
-- Secure architecture design  
-- Governance & compliance alignment  
-- DevSecOps processes  
-- Public-sector modernization strategy  
-
-It is intended to showcase enterprise-level design thinking and leadership in system architecture.
-
----
+      - name: Run a simple verification step
+        run: echo "CI/CD pipeline is running successfully!"
